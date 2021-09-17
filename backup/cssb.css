@@ -1,0 +1,234 @@
+body{
+    background-color: #171717;
+    color:rgb(238, 238, 238);
+    margin: none;
+    width: 100%;
+    height: 100%;
+    font-family: monospace;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+   
+  :target {
+    scroll-margin-top: .8em;
+  }
+html, body{
+    margin:0px !important;
+    padding: 0px !important;
+ }
+a{
+    text-decoration-line: none;
+    color: rgb(43, 57, 83);
+}
+a:hover{
+    color: darkblue;
+}
+
+.menu{
+    position: absolute;
+    background-color: transparent;
+    text-align: right;
+    padding-top: 1%;
+    max-width: 100% !important;
+    width: 100% !important;
+    height: 8% !important;
+    top: 0;
+}
+.menu a{
+    color: #ececec;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 14px;
+}
+.menu li{
+    display: inline-block;
+}
+.menu a:hover{
+    color:rgb(87, 69, 129);
+}
+
+.typewriter h2{
+    color: rgb(240, 240, 240);
+    font-size: 20px;
+    top: 43%;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(255, 255, 255); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    margin-left: 5%;
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 8s steps(60, end),
+      blink-caret .5s step-end infinite;
+    position: absolute;
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 70% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(255, 255, 255) }
+  }
+
+.qsou{
+    margin-top: 150px;
+    background-color: #252525;
+    align-items: center !important;
+    width: 60%;
+    text-align: center;
+    height: auto;
+    padding: 2%;
+    margin-left: 20%;
+}
+.qsou img:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.tecnologias{
+    margin-top: 200px;
+    background-color: #252525;
+    align-items: center !important;
+    width: 60%;
+    text-align: center;
+    height: auto;
+    padding: 2%;
+    margin-left: 20%;
+}
+.projetos{
+    margin-top: 200px;
+    background-color: #252525;
+    color: #ececec;
+    align-items: center !important;
+    width: 60%;
+    text-align: center;
+    height: auto;
+    padding: 2%;
+    margin-left: 20%;
+}
+
+.pjtbl{
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+   }
+.pjtbl:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+   }
+.projetos button{
+    text-align: center;
+    margin-left: 33%;
+    border: none;
+    background-color: rgb(72, 73, 75);
+    color: white;
+    height: 22px;
+}
+
+.projetos button:hover{
+    background-color: rgb(121, 121, 121);
+}
+.projetos a{
+    color: rgb(240, 240, 240);
+    text-decoration: none;
+}
+.cont{
+    padding: 20px;
+    border-radius: 8px;
+    align-items: center !important;
+    text-align: center;
+    background-color: rgb(226, 226, 226);
+    width: 55%;
+    height: auto;
+    margin-left: 22%;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000; 
+}
+.pjtbl{
+    padding: 8px;
+    border-radius: 8px;
+    align-items: center !important;
+    text-align: center;
+    background-color: rgb(226, 226, 226);
+    text-align: justify;
+    width: 55%;
+    height: auto;
+    margin-left: 25%;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000; 
+}
+
+
+.redes{
+    margin-top: 200px;
+    background-color: #252525;
+    align-items: center !important;
+    width: 60%;
+    text-align: center;
+    height: auto;
+    padding: 2%;
+    margin-left: 20%;
+}
+
+.redes img:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.tblr{
+    margin-left: 38%;
+}
+
+
+.local{
+    margin-top: 200px;
+    background-color: #252525;
+    align-items: center !important;
+    width: 60%;
+    text-align: center;
+    height: auto;
+    padding: 2%;
+    margin-left: 20%;
+}
+h1{
+   font-size: 35px;
+}
+.img1{
+    height: 30%;
+    width: 25%;
+}
+.img2{
+    height: 15%;
+    width: 15%;
+    align-items: center;
+}
+
+.footer{
+    margin-top: 250px;
+    background-color:#252525;
+    padding:1%;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    text-decoration: none;
+}
+.btn::after {
+    content: "↑";
+    font-size: 32px;
+    font-weight: bold;
+    color: aliceblue;
+    transition: margin-top 250ms;
+}
